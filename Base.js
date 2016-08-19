@@ -1,7 +1,7 @@
 'use strict';
 
-import LIVR from 'livr';
-import Exception from './Exception';
+const LIVR      = require('livr');
+const Exception = require('./Exception');
 
 export default class Base {
     constructor(args) {
