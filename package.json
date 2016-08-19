@@ -1,0 +1,24 @@
+{
+  "name": "service-layer",
+  "version": "1.0.0",
+  "description": "Base class for service layer",
+  "main": "Base.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WebbyLab/node-service-base.git"
+  },
+  "author": "WebbyLab",
+  "license": "ISC",
+
+  "peerDependencies": {
+      "livr": "*"
+  },
+
+  "bugs": {
+    "url": "https://github.com/WebbyLab/node-service-base/issues"
+  },
+  "homepage": "https://github.com/WebbyLab/node-service-base#readme"
+}
