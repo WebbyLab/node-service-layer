@@ -1,6 +1,6 @@
 'use strict';
 
-export default class Exception extends Error {
+class Exception extends Error {
     constructor(data) {
         super();
         /* istanbul ignore next */
@@ -20,3 +20,5 @@ export default class Exception extends Error {
         };
     }
 }
+
+module.exports = Exception;

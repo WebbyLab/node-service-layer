@@ -3,7 +3,7 @@
 const LIVR      = require('livr');
 const Exception = require('./Exception');
 
-export default class Base {
+class Base {
     constructor(args) {
         if (!args.context) throw "context required";
         this.context = args.context;
@@ -45,3 +45,5 @@ export default class Base {
         return result;
     }
 }
+
+module.exports = Base;
