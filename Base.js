@@ -9,9 +9,10 @@ class Base {
         this.context = args.context;
     }
 
-    async run(params) {
-        const cleanParams = await this.validate(params);
-        return await this.execute(cleanParams);
+    run(params) {
+        return this.validate(params).then(cleanParams => {
+            return this.execute(cleanParams)
+        });
     }
 
     validate(data) {
