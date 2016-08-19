@@ -43,7 +43,7 @@ class Base {
             return Promise.reject(exception);
         }
 
-        return result;
+        return Promise.resolve(result);
     }
 }
 
