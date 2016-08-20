@@ -1,8 +1,8 @@
 {
   "name": "service-layer",
   "version": "1.0.0",
-  "description": "Base class for service layer",
-  "main": "Base.js",
+  "description": "Base class for you service layer",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

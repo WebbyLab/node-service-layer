@@ -4,10 +4,9 @@ const rename  = require('rename-keys');
 class Exception extends Error {
     constructor(data) {
         super();
-        /* istanbul ignore next */
-        if (!data.fields) throw new Error('FIELDS REQUIRED');
-        /* istanbul ignore next */
-        if (!data.code) throw new Error('MESSAGE REQUIRED');
+        if (!data.fields) throw new Error('FIELDS_REQUIRED');
+        if (!data.code) throw new Error('MESSAGE_REQUIRED');
+
         const fields = pointer.dict(data.fields);
 
         this.fields = rename(fields, str => {
