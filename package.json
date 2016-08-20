@@ -12,13 +12,15 @@
   },
   "author": "WebbyLab",
   "license": "ISC",
-
   "peerDependencies": {
-      "livr": "*"
+    "livr": "*"
   },
-
   "bugs": {
     "url": "https://github.com/WebbyLab/node-service-base/issues"
   },
-  "homepage": "https://github.com/WebbyLab/node-service-base#readme"
+  "homepage": "https://github.com/WebbyLab/node-service-base#readme",
+  "dependencies": {
+    "json-pointer": "^0.5.0",
+    "rename-keys": "^1.1.2"
+  }
 }

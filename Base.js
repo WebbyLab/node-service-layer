@@ -1,11 +1,9 @@
-'use strict';
-
 const LIVR      = require('livr');
 const Exception = require('./Exception');
 
 class Base {
     constructor(args) {
-        if (!args.context) throw "context required";
+        if (!args.context) throw new Error('CONTEXT_REQUIRED');
         this.context = args.context;
     }
 
@@ -36,7 +34,7 @@ class Base {
 
         if (!result) {
             const exception = new Exception({
-                code   : "FORMAT_ERROR",
+                code   : 'FORMAT_ERROR',
                 fields : validator.getErrors()
             });
 
