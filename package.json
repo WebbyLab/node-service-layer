@@ -1,6 +1,6 @@
 {
   "name": "service-layer",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Base class for you service layer",
   "main": "index.js",
   "scripts": {
